@@ -34,6 +34,8 @@ namespace MethodReturn
             this.q2Output = new System.Windows.Forms.Label();
             this.lengthLabel = new System.Windows.Forms.Label();
             this.lengthInput = new System.Windows.Forms.TextBox();
+            this.widthLabel = new System.Windows.Forms.Label();
+            this.widthInput = new System.Windows.Forms.TextBox();
             this.titleLabel = new System.Windows.Forms.Label();
             this.testButton = new System.Windows.Forms.Button();
             this.q1Output = new System.Windows.Forms.Label();
@@ -45,8 +47,6 @@ namespace MethodReturn
             this.copiesInput = new System.Windows.Forms.TextBox();
             this.q3Output = new System.Windows.Forms.Label();
             this.copiesLabel = new System.Windows.Forms.Label();
-            this.widthLabel = new System.Windows.Forms.Label();
-            this.widthInput = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -99,6 +99,25 @@ namespace MethodReturn
             this.lengthInput.Size = new System.Drawing.Size(65, 24);
             this.lengthInput.TabIndex = 10;
             this.lengthInput.Text = "0";
+            // 
+            // widthLabel
+            // 
+            this.widthLabel.AutoSize = true;
+            this.widthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.widthLabel.Location = new System.Drawing.Point(70, 75);
+            this.widthLabel.Name = "widthLabel";
+            this.widthLabel.Size = new System.Drawing.Size(46, 18);
+            this.widthLabel.TabIndex = 14;
+            this.widthLabel.Text = "width:";
+            // 
+            // widthInput
+            // 
+            this.widthInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.widthInput.Location = new System.Drawing.Point(120, 72);
+            this.widthInput.Name = "widthInput";
+            this.widthInput.Size = new System.Drawing.Size(65, 24);
+            this.widthInput.TabIndex = 15;
+            this.widthInput.Text = "0";
             // 
             // titleLabel
             // 
@@ -222,25 +241,6 @@ namespace MethodReturn
             this.copiesLabel.TabIndex = 12;
             this.copiesLabel.Text = "copies:";
             // 
-            // widthLabel
-            // 
-            this.widthLabel.AutoSize = true;
-            this.widthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.widthLabel.Location = new System.Drawing.Point(70, 75);
-            this.widthLabel.Name = "widthLabel";
-            this.widthLabel.Size = new System.Drawing.Size(46, 18);
-            this.widthLabel.TabIndex = 14;
-            this.widthLabel.Text = "width:";
-            // 
-            // widthInput
-            // 
-            this.widthInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.widthInput.Location = new System.Drawing.Point(120, 72);
-            this.widthInput.Name = "widthInput";
-            this.widthInput.Size = new System.Drawing.Size(65, 24);
-            this.widthInput.TabIndex = 15;
-            this.widthInput.Text = "0";
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.copiesInput);
@@ -268,6 +268,7 @@ namespace MethodReturn
             this.Controls.Add(this.groupBox3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Method Return Values";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
