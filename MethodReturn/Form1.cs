@@ -33,7 +33,7 @@ namespace MethodReturn
             int num1 = Convert.ToInt16(q1Num1Input.Text);
             int num2 = Convert.ToInt16(q1Num2Input.Text);
            
-            Add(num1, num2);
+            Add(num1, num2); 
 
 
 
